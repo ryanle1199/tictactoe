@@ -1,0 +1,37 @@
+<html> 
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+      </style>
+  </head>
+<h1>Tic-Tac-Toe</h1>
+
+ <body onload="startGame()"> 
+  <div id= "message">Player</div>
+    <div class="board" id="board">
+        <div class="cell" id="c1" onclick="nextMove(this)" data-cell></div>
+        <div class="cell" id="c2" onclick="nextMove(this)" data-cell></div>
+        <div class="cell" id="c3" onclick="nextMove(this)"data-cell></div>
+
+        <div class="cell" id="c4" onclick="nextMove(this)"data-cell></div>
+        <div class="cell" id="c5" onclick="nextMove(this)"data-cell></div>
+        <div class="cell" id="c6" onclick="nextMove(this)"data-cell></div>
+
+        <div class="cell" id="c7" onclick="nextMove(this)"data-cell></div>
+        <div class="cell" id="c8" onclick="nextMove(this)"data-cell></div>
+        <div class="cell" id="c9" onclick="nextMove(this)"data-cell></div>
+ 
+      </div>
+
+      
+
+ <div class="winning-message" id ="winningMessage">
+     <div data-winning-message-text ></div>
+     <button id="startOverButton" onClick="window.location.reload();"  >Start Over</button>
+      
+ </div>
+<script src="app.js"></script>
+ </body>
+ </html>

@@ -1,0 +1,98 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+    font-family: 'Architects Daughter', cursive;
+    font-size: 70px;
+}
+:root {
+    --cell-size: 80px;
+}
+
+
+body {
+    margin: 0;
+    
+}
+
+.board {
+    position: fixed;
+    width: 50vw;
+    height: 50vh;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: repeat(3,auto);
+    padding-top: 0px;
+}
+
+
+.cell {
+    width: 100px;
+    height: 100px;
+    background-color: white;
+    border: 1px solid lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cell:hover {
+    background: lightblue;
+        
+    }
+
+  
+    h1 {
+        justify-content: center;
+        display: flex;
+        padding-top: 10px;
+        padding-bottom: 0px;
+        font-family: sans-serif;
+    }
+    
+    h3 {
+        font-size: 30px;
+    }
+    
+
+    button {
+        font-size: medium;
+    }
+
+    .winning-message {
+        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: lightblue;
+        opacity: 0.9;
+       
+        justify-content: center;
+        align-items: center;
+        font-size: 30px;
+
+    }
+
+.winning-message button {
+    font-size: 40px;
+    background-color: lightcoral;
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+.winning-message button:hover {
+    background-color: black;
+    color: lightcoral;
+    border-color: white;
+}
+.winning-message.show {
+     display: flex;
+}
+
+
+#restart {
+    fon
+}
